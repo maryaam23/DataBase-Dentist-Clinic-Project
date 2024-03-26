@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="716.0" prefWidth="912.0" style="-fx-background-color: #62AEC0; -fx-border-radius: 50;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.database_grouppro.PatientController">
+   <children>
+      <AnchorPane focusTraversable="true" layoutX="356.0" layoutY="150.0" prefHeight="503.0" prefWidth="435.0" style="-fx-background-color: #eeeeee; -fx-background-radius: 50;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../MaryamProjectPhotos/Screenshot%202024-01-02%20233951-fococlipping-standard.png" />
+               </image>
+            </ImageView>
+            <Label graphicTextGap="10.0" layoutX="306.0" layoutY="54.0" text="Patient Information's" textAlignment="CENTER">
+               <font>
+                  <Font name="Goudy Old Style Bold" size="32.0" />
+               </font>
+               <effect>
+                  <ColorAdjust brightness="-1.0" contrast="1.0" hue="1.0" saturation="1.0" />
+               </effect>
+            </Label>
+            <Label blendMode="HARD_LIGHT" cache="true" cacheHint="QUALITY" focusTraversable="false" graphicTextGap="1.0" layoutX="22.0" layoutY="200.0" text="ID" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="15.0">
+               <font>
+                  <Font name="Goudy Old Style Bold" size="23.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets bottom="1.0" />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <effect>
+                  <Lighting diffuseConstant="0.0" specularConstant="0.0" specularExponent="40.0" surfaceScale="0.0">
+                     <bumpInput>
+                        <ColorAdjust />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant>
+                           <color>
+                              <Color />
+                           </color>
+                        </Light.Distant>
+                     </light>
+                  </Lighting>
+               </effect>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.16842105984687805" green="0.024327484890818596" blue="0.024327484890818596" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label blendMode="HARD_LIGHT" cache="true" cacheHint="QUALITY" focusTraversable="false" graphicTextGap="1.0" layoutX="16.0" layoutY="250.0" text="Name" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="15.0">
+               <font>
+                  <Font name="Goudy Old Style Bold" size="23.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets bottom="1.0" />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <effect>
+                  <Lighting diffuseConstant="0.0" specularConstant="0.0" specularExponent="40.0" surfaceScale="0.0">
+                     <bumpInput>
+                        <ColorAdjust />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant>
+                           <color>
+                              <Color />
+                           </color>
+                        </Light.Distant>
+                     </light>
+                  </Lighting>
+               </effect>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.16842105984687805" green="0.024327484890818596" blue="0.024327484890818596" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label blendMode="HARD_LIGHT" cache="true" cacheHint="QUALITY" focusTraversable="false" graphicTextGap="1.0" layoutX="10.0" layoutY="300.0" text="Gender" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="15.0">
+               <font>
+                  <Font name="Goudy Old Style Bold" size="23.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets bottom="1.0" />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <effect>
+                  <Lighting diffuseConstant="0.0" specularConstant="0.0" specularExponent="40.0" surfaceScale="0.0">
+                     <bumpInput>
+                        <ColorAdjust />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant>
+                           <color>
+                              <Color />
+                           </color>
+                        </Light.Distant>
+                     </light>
+                  </Lighting>
+               </effect>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.16842105984687805" green="0.024327484890818596" blue="0.024327484890818596" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label blendMode="HARD_LIGHT" cache="true" cacheHint="QUALITY" focusTraversable="false" graphicTextGap="1.0" layoutX="2.0" layoutY="350.0" text="Phone Number" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="15.0">
+               <font>
+                  <Font name="Goudy Old Style Bold" size="23.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets bottom="1.0" />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <effect>
+                  <Lighting diffuseConstant="0.0" specularConstant="0.0" specularExponent="40.0" surfaceScale="0.0">
+                     <bumpInput>
+                        <ColorAdjust />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant>
+                           <color>
+                              <Color />
+                           </color>
+                        </Light.Distant>
+                     </light>
+                  </Lighting>
+               </effect>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.16842105984687805" green="0.024327484890818596" blue="0.024327484890818596" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label blendMode="HARD_LIGHT" cache="true" cacheHint="QUALITY" focusTraversable="false" graphicTextGap="1.0" layoutX="29.0" layoutY="400.0" text="Email" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="15.0">
+               <font>
+                  <Font name="Goudy Old Style Bold" size="23.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets bottom="1.0" />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <effect>
+                  <Lighting diffuseConstant="0.0" specularConstant="0.0" specularExponent="40.0" surfaceScale="0.0">
+                     <bumpInput>
+                        <ColorAdjust />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant>
+                           <color>
+                              <Color />
+                           </color>
+                        </Light.Distant>
+                     </light>
+                  </Lighting>
+               </effect>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.16842105984687805" green="0.024327484890818596" blue="0.024327484890818596" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label blendMode="HARD_LIGHT" cache="true" cacheHint="QUALITY" focusTraversable="false" graphicTextGap="1.0" layoutX="10.0" layoutY="500.0" text="Birth Date" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="15.0">
+               <font>
+                  <Font name="Goudy Old Style Bold" size="23.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets bottom="1.0" />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <effect>
+                  <Lighting diffuseConstant="0.0" specularConstant="0.0" specularExponent="40.0" surfaceScale="0.0">
+                     <bumpInput>
+                        <ColorAdjust />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant>
+                           <color>
+                              <Color />
+                           </color>
+                        </Light.Distant>
+                     </light>
+                  </Lighting>
+               </effect>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.16842105984687805" green="0.024327484890818596" blue="0.024327484890818596" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label blendMode="HARD_LIGHT" cache="true" cacheHint="QUALITY" focusTraversable="false" graphicTextGap="1.0" layoutY="450.0" text="Insurance Company" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="15.0">
+               <font>
+                  <Font name="Goudy Old Style Bold" size="23.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets bottom="1.0" />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <effect>
+                  <Lighting diffuseConstant="0.0" specularConstant="0.0" specularExponent="40.0" surfaceScale="0.0">
+                     <bumpInput>
+                        <ColorAdjust />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant>
+                           <color>
+                              <Color />
+                           </color>
+                        </Light.Distant>
+                     </light>
+                  </Lighting>
+               </effect>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.16842105984687805" green="0.024327484890818596" blue="0.024327484890818596" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <TextField fx:id="Patient_id" layoutX="223.0" layoutY="200.0" promptText="Patient Id" AnchorPane.leftAnchor="229.0" AnchorPane.rightAnchor="512.8000000000001" />
+            <TextField fx:id="Patient_name" layoutX="223.0" layoutY="250.0" promptText="Patient Name" AnchorPane.leftAnchor="229.0" AnchorPane.rightAnchor="512.8000000000001" />
+            <TextField fx:id="Patient_PhoneNum" layoutX="229.0" layoutY="350.0" promptText="Patient Phone" AnchorPane.leftAnchor="229.0" AnchorPane.rightAnchor="512.8000000000001" />
+            <TextField fx:id="Patient_Email" layoutX="223.0" layoutY="400.0" prefHeight="26.0" prefWidth="202.0" promptText="Name.Id@gmail.com" AnchorPane.leftAnchor="229.0" AnchorPane.rightAnchor="512.8000000000001" />
+            <TextField fx:id="Patient_Insurance" layoutX="254.0" layoutY="450.0" promptText="Insurance Name" AnchorPane.leftAnchor="229.0" AnchorPane.rightAnchor="512.8000000000001" />
+            <RadioButton fx:id="Female_Rad_But" layoutX="224.0" layoutY="300.0" mnemonicParsing="false" text="Female" AnchorPane.leftAnchor="229.0" AnchorPane.rightAnchor="512.8000000000001" />
+            <RadioButton fx:id="Male_Rad_But" layoutX="324.0" layoutY="300.0" mnemonicParsing="false" text="Male" AnchorPane.leftAnchor="324.0" AnchorPane.rightAnchor="512.8000000000001" />
+            <DatePicker fx:id="Birthday" layoutX="241.0" layoutY="500.0" AnchorPane.leftAnchor="229.0" AnchorPane.rightAnchor="512.8000000000001" />
+            <Label fx:id="Patient_LastVisit_Date" blendMode="HARD_LIGHT" graphicTextGap="1.0" layoutX="31.0" layoutY="550.0" text="Last Visit Date" AnchorPane.leftAnchor="15.0">
+               <font>
+                  <Font name="Goudy Old Style Bold" size="23.0" />
+               </font>
+               <effect>
+                  <Lighting bumpInput="$null" diffuseConstant="0.0" specularConstant="0.0" specularExponent="40.0" surfaceScale="10.0">
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets bottom="1.0" />
+               </opaqueInsets>
+            </Label>
+            <ComboBox fx:id="Doctor_Menu" layoutX="217.0" layoutY="601.0" prefWidth="150.0" promptText="Choose your DR." AnchorPane.rightAnchor="512.8000000000001" />
+            <Label layoutX="14.0" layoutY="600.0" text="Doctor Name">
+               <font>
+                  <Font name="Goudy Old Style Bold" size="23.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="2.0" specularConstant="0.0" specularExponent="0.0" surfaceScale="10.0">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant>
+                           <color>
+                              <Color />
+                           </color>
+                        </Light.Distant>
+                     </light>
+                  </Lighting>
+               </effect>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Label layoutX="497.0" layoutY="311.0" text="Medical State">
+               <font>
+                  <Font name="Goudy Old Style Bold" size="23.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="2.0" specularConstant="2.0" specularExponent="40.0" surfaceScale="0.0">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant>
+                           <color>
+                              <Color />
+                           </color>
+                        </Light.Distant>
+                     </light>
+                  </Lighting>
+               </effect>
+            </Label>
+            <ComboBox fx:id="Treatment_Type" layoutX="493.0" layoutY="200.0" prefWidth="150.0" promptText="Treatment Type" />
+            <CheckBox fx:id="Allergies_Check" layoutX="497.0" layoutY="353.0" mnemonicParsing="false" text="Allergies" AnchorPane.leftAnchor="497.0" AnchorPane.topAnchor="350.0" />
+            <CheckBox fx:id="BloodDisorders_Check" layoutX="756.0" layoutY="384.0" mnemonicParsing="false" text="Blood Disorders" AnchorPane.leftAnchor="756.0" AnchorPane.topAnchor="375.0" />
+            <CheckBox fx:id="RespiratoryDiseases_Check" layoutX="614.0" layoutY="391.0" mnemonicParsing="false" text="Respiratory Diseases" AnchorPane.leftAnchor="590.0" AnchorPane.topAnchor="375.0" />
+            <CheckBox fx:id="LiverorKidneyDisease_Check" layoutX="607.0" layoutY="441.0" mnemonicParsing="false" text="Liver or Kidney Disease" AnchorPane.leftAnchor="590.0" AnchorPane.topAnchor="400.0" />
+            <CheckBox fx:id="Pregnancy_Check" layoutX="494.0" layoutY="432.0" mnemonicParsing="false" text="Pregnancy" AnchorPane.leftAnchor="497.0" AnchorPane.topAnchor="400.0" />
+            <CheckBox fx:id="HeartConditions_Check" layoutX="614.0" layoutY="353.0" mnemonicParsing="false" text="Heart Conditions" AnchorPane.leftAnchor="590.0" AnchorPane.topAnchor="350.0" />
+            <CheckBox fx:id="Diabetes_Check" layoutX="756.0" layoutY="353.0" mnemonicParsing="false" text="Diabetes" AnchorPane.leftAnchor="756.0" AnchorPane.topAnchor="350.0" />
+            <CheckBox fx:id="ImmuneSystemDisorders_Check" layoutX="611.0" layoutY="476.0" mnemonicParsing="false" text="Immune System Disorders" AnchorPane.leftAnchor="590.0" AnchorPane.topAnchor="425.0" />
+            <CheckBox fx:id="Cancer_Check" layoutX="491.0" layoutY="391.0" mnemonicParsing="false" text="Cancer" AnchorPane.leftAnchor="497.0" AnchorPane.topAnchor="375.0" />
+            <Label layoutX="501.0" layoutY="261.0" text="Cost">
+               <font>
+                  <Font name="Goudy Old Style Bold" size="23.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="2.0" specularConstant="2.0" specularExponent="40.0" surfaceScale="0.0">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant>
+                           <color>
+                              <Color />
+                           </color>
+                        </Light.Distant>
+                     </light>
+                  </Lighting>
+               </effect>
+            </Label>
+            <TextField fx:id="Treatment_Cost" layoutX="555.0" layoutY="262.0" prefHeight="26.0" prefWidth="59.0" promptText="Cost" />
+            <CheckBox fx:id="Pressure_Check" layoutX="497.0" layoutY="467.0" mnemonicParsing="false" text="Pressure" AnchorPane.leftAnchor="497.0" AnchorPane.topAnchor="425.0" />
+            <CheckBox fx:id="Xerostomia_Check" layoutX="749.0" layoutY="441.0" mnemonicParsing="false" text="Xerostomia (Dry Mouth)" AnchorPane.leftAnchor="756.0" AnchorPane.topAnchor="400.0" />
+            <CheckBox fx:id="GERD_Check" layoutX="504.0" layoutY="455.0" mnemonicParsing="false" text="Gastroesophageal Reflux Disease (GERD)" AnchorPane.leftAnchor="497.0" AnchorPane.topAnchor="455.0" />
+            <CheckBox fx:id="SleepApnea_Check" layoutX="743.0" layoutY="425.0" mnemonicParsing="false" text="Sleep Apnea" AnchorPane.leftAnchor="756.0" />
+            <Button fx:id="Add_Button_PatInfo" defaultButton="true" layoutX="530.0" layoutY="542.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Add_Button_PatInfo" prefHeight="68.0" prefWidth="157.0" style="-fx-background-radius: 50; -fx-background-color: #eeeeee;" text="   ADD" textAlignment="RIGHT" textFill="#0009ff" wrapText="true" AnchorPane.leftAnchor="530.0">
+               <graphic>
+                  <ImageView fitHeight="55.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../MaryamProjectPhotos/950764.png" />
+                     </image>
+                     <effect>
+                        <ColorAdjust brightness="-0.09" />
+                     </effect>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Serif Bold" size="18.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="1.42" specularConstant="0.0" specularExponent="0.0" surfaceScale="1.59">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant>
+                           <color>
+                              <Color red="1.0" green="0.9740740656852722" blue="0.9740740656852722" />
+                           </color>
+                        </Light.Distant>
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+            <Button fx:id="Refresh_Button_PatInfo" defaultButton="true" layoutX="694.0" layoutY="542.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Refresh_Button_PatInfo" prefHeight="68.0" prefWidth="158.0" style="-fx-background-radius: 50; -fx-background-color: #eeeeee;" text="Refresh" textAlignment="RIGHT" textFill="#0011ff" AnchorPane.leftAnchor="694.0">
+               <graphic>
+                  <ImageView fitHeight="55.0" fitWidth="78.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../MaryamProjectPhotos/950774.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Serif Bold" size="18.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="1.42" specularConstant="0.0" specularExponent="0.0" surfaceScale="1.59">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant>
+                           <color>
+                              <Color red="1.0" green="0.9740740656852722" blue="0.9740740656852722" />
+                           </color>
+                        </Light.Distant>
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+            <Button fx:id="ReturnCoverPage" layoutX="827.0" layoutY="647.0" mnemonicParsing="false" onAction="#ReturnCoverPage" prefHeight="42.0" prefWidth="20.0" style="-fx-background-radius: 50; -fx-background-color: #eeeeee;">
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../MaryamProjectPhotos/3768470.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fitHeight="68.0" fitWidth="110.0" layoutX="609.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../MaryamProjectPhotos/3433925.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="DESC_Per" layoutX="670.0" layoutY="200.0" prefHeight="26.0" prefWidth="158.0" promptText="Description" />
+            <Label layoutX="635.0" layoutY="264.0" prefHeight="28.0" prefWidth="138.0" text="Amount Paid">
+               <font>
+                  <Font name="Goudy Old Style Bold" size="23.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="2.0" specularConstant="2.0" specularExponent="40.0" surfaceScale="0.0">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant>
+                           <color>
+                              <Color />
+                           </color>
+                        </Light.Distant>
+                     </light>
+                  </Lighting>
+               </effect>
+            </Label>
+            <TextField fx:id="Amount_Paid" layoutX="779.0" layoutY="265.0" prefHeight="26.0" prefWidth="82.0" promptText="Amout Paid" />
+            <Label layoutX="16.0" layoutY="648.0" text="Doctor ID">
+               <font>
+                  <Font name="Goudy Old Style Bold" size="23.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="2.0" specularConstant="0.0" specularExponent="0.0" surfaceScale="10.0">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant>
+                           <color>
+                              <Color />
+                           </color>
+                        </Light.Distant>
+                     </light>
+                  </Lighting>
+               </effect>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="Dentist_id1" layoutX="217.0" layoutY="649.0" promptText="Dentist Id" AnchorPane.rightAnchor="512.8000000000001" />
+            <DatePicker fx:id="LastVisitDate" layoutX="229.0" layoutY="550.0" prefHeight="26.0" prefWidth="155.0" />
+            <Button fx:id="PatientRecorgPage" layoutX="571.0" layoutY="622.0" mnemonicParsing="false" onAction="#PatientInfoScene" prefHeight="54.0" prefWidth="233.0" style="-fx-background-color: #62AEC0; -fx-background-radius: 50;" text="Go To Patient Record Page" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Goudy Old Style Bold" size="16.0" />
+               </font>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </AnchorPane>
+      <Text layoutX="42.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ramallah Smile Advanced Oral Care Clinic">
+         <font>
+            <Font name="Goudy Old Style Bold" size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

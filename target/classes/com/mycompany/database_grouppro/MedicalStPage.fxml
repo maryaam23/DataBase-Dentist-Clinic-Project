@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="716.0" prefWidth="912.0" style="-fx-background-color: #62AEC0; -fx-border-radius: 50;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.database_grouppro.MedicalStateController">
+   <children>
+      <AnchorPane focusTraversable="true" layoutX="356.0" layoutY="150.0" prefHeight="503.0" prefWidth="435.0" style="-fx-background-color: #eeeeee; -fx-background-radius: 50;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../MaryamProjectPhotos/Screenshot%202024-01-02%20233951-fococlipping-standard.png" />
+               </image>
+            </ImageView>
+            <Label graphicTextGap="10.0" layoutX="334.0" layoutY="62.0" prefHeight="54.0" prefWidth="252.0" text="Medical State" textAlignment="CENTER" AnchorPane.leftAnchor="334.0" AnchorPane.rightAnchor="305.0">
+               <font>
+                  <Font name="Goudy Old Style Bold" size="45.0" />
+               </font>
+               <effect>
+                  <ColorAdjust brightness="-1.0" contrast="1.0" hue="1.0" saturation="1.0" />
+               </effect>
+            </Label>
+            <Button layoutX="827.0" layoutY="647.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="20.0" style="-fx-background-radius: 50; -fx-background-color: #eeeeee;" />
+            <TableView fx:id="tableMedicalist" layoutX="14.0" layoutY="156.0" prefHeight="339.0" prefWidth="858.0" style="-fx-border-radius: 50;" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0">
+              <columns>
+                  <TableColumn fx:id="Patient_id" prefWidth="182.4000015258789" text="Patient ID" />
+                  <TableColumn fx:id="Patient_name" prefWidth="154.39996337890625" text="Patient Name" />
+                  <TableColumn fx:id="M_medical_state" minWidth="0.0" prefWidth="211.19992065429688" text="Medical State" />
+                  <TableColumn fx:id="Last_visited_date" maxWidth="200.0" prefWidth="275.20001220703125" text="Last Date Visit" />
+              </columns>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </TableView>
+            <Button fx:id="ReturnCoverPage" layoutX="204.0" layoutY="626.0" mnemonicParsing="false" onAction="#ReturnCoverPage" prefHeight="54.0" prefWidth="178.0" style="-fx-background-color: #62AEC0; -fx-border-radius: 50; -fx-background-radius: 50;" text="Go To Base Page" textFill="WHITE" AnchorPane.leftAnchor="25.0">
+               <graphic>
+                  <ImageView fitHeight="42.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../MaryamProjectPhotos/5488456.png" />
+                     </image>
+                     <effect>
+                        <Lighting bumpInput="$null" specularConstant="2.0" specularExponent="0.0">
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Goudy Old Style Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="Search_Button_Medical" layoutX="669.0" layoutY="508.0" mnemonicParsing="false" onAction="#Search_Button_Medical" prefHeight="38.0" prefWidth="156.0" style="-fx-background-radius: 50; -fx-background-color: white;" text="Search By P ID" textFill="#0015ff">
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../MaryamProjectPhotos/3410475.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Goudy Old Style Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="Delete_Button_Medical" layoutX="662.0" layoutY="556.0" mnemonicParsing="false" onAction="#Delete_Button_Medical" prefHeight="38.0" prefWidth="225.0" style="-fx-background-radius: 50; -fx-background-color: white;" text="Delete By Patient ID" textFill="#0015ff">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../MaryamProjectPhotos/7247454.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Goudy Old Style Bold" size="16.0" />
+               </font>
+            </Button>
+            <TextField fx:id="Patient_id1" layoutX="368.0" layoutY="576.0" prefHeight="26.0" prefWidth="104.0" promptText="Patient ID" AnchorPane.bottomAnchor="92.80000000000007" AnchorPane.leftAnchor="368.0" />
+            <Label layoutX="277.0" layoutY="580.0" text="Patient ID" AnchorPane.bottomAnchor="96.80000000000007" AnchorPane.leftAnchor="277.0">
+               <font>
+                  <Font name="Goudy Old Style Bold" size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="Refresh_Button" layoutX="30.0" layoutY="568.0" mnemonicParsing="false" onAction="#Refresh_Button" prefHeight="42.0" prefWidth="112.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="Refresh" textFill="#0014ff">
+               <graphic>
+                  <ImageView fitHeight="38.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../MaryamProjectPhotos/13015679.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Goudy Old Style Bold" size="15.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="65.0" fitWidth="65.0" layoutX="604.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../MaryamProjectPhotos/740371.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="countMedSButton" layoutX="226.0" layoutY="611.0" mnemonicParsing="false" onAction="#countMedSButton" prefHeight="42.0" prefWidth="284.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="Number Of Medical State To This Patient" textFill="#0014ff">
+               <font>
+                  <Font name="Goudy Old Style Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label fx:id="countLabel" layoutX="536.0" layoutY="620.0" prefHeight="18.0" prefWidth="49.0">
+               <font>
+                  <Font name="Goudy Old Style" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="ListOfMedical" layoutX="598.0" layoutY="649.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="284.0" style="-fx-background-radius: 50; -fx-background-color: white;" text="List Of Patient Have This Medical State" textFill="#0015ff">
+               <font>
+                  <Font name="Goudy Old Style Bold" size="16.0" />
+               </font>
+            </Button>
+            <TextField fx:id="Medicallist" layoutX="368.0" layoutY="542.0" prefHeight="26.0" prefWidth="104.0" promptText="Medical State" />
+            <Label layoutX="277.0" layoutY="546.0" text="Medical State">
+               <font>
+                  <Font name="Goudy Old Style Bold" size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="Delete_Both" layoutX="604.0" layoutY="603.0" mnemonicParsing="false" onAction="#Delete_Both" prefHeight="38.0" prefWidth="284.0" style="-fx-background-radius: 50; -fx-background-color: white;" text="Delete By Patient ID &amp; Med State" textFill="#0015ff">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../MaryamProjectPhotos/7247454.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Goudy Old Style Bold" size="16.0" />
+               </font>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </AnchorPane>
+      <Text layoutX="42.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ramallah Smile Advanced Oral Care Clinic">
+         <font>
+            <Font name="Goudy Old Style Bold" size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

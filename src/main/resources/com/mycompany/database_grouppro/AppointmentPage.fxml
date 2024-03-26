@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="716.0" prefWidth="912.0" style="-fx-background-color: #62AEC0; -fx-border-radius: 50;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.database_grouppro.AppointmentController">
+   <children>
+      <AnchorPane focusTraversable="true" layoutX="356.0" layoutY="150.0" prefHeight="503.0" prefWidth="435.0" style="-fx-background-color: #eeeeee; -fx-background-radius: 50;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../MaryamProjectPhotos/Screenshot%202024-01-02%20233951-fococlipping-standard.png" />
+               </image>
+            </ImageView>
+            <Label graphicTextGap="10.0" layoutX="279.0" layoutY="62.0" prefHeight="54.0" prefWidth="369.0" text="Appointment's List" textAlignment="CENTER" AnchorPane.leftAnchor="279.0" AnchorPane.rightAnchor="244.20000000000005">
+               <font>
+                  <Font name="Goudy Old Style Bold" size="45.0" />
+               </font>
+               <effect>
+                  <ColorAdjust brightness="-1.0" contrast="1.0" hue="1.0" saturation="1.0" />
+               </effect>
+            </Label>
+            <Button layoutX="827.0" layoutY="647.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="20.0" style="-fx-background-radius: 50; -fx-background-color: #eeeeee;" />
+            <TableView fx:id="AppointmentTable" layoutY="158.0" prefHeight="314.0" prefWidth="891.0" style="-fx-border-radius: 50;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+              <columns>
+                <TableColumn fx:id="Appointment_id" prefWidth="104.79998624324799" text="Appointment ID" />
+                <TableColumn fx:id="Appointment_Date" prefWidth="126.39997100830078" text="Appointment Date" />
+                  <TableColumn fx:id="Appointment_Time" prefWidth="123.199951171875" text="Appointment Time" />
+                  <TableColumn fx:id="Patient_id" prefWidth="112.0" text="Patient ID" />
+                  <TableColumn fx:id="Patient_name" prefWidth="125.60000610351562" text="Patient Name" />
+                  <TableColumn fx:id="Dentist_id" minWidth="0.0" prefWidth="150.39996337890625" text="Doctor Id" />
+                  <TableColumn fx:id="Dentist_Name" maxWidth="200.0" prefWidth="173.5999755859375" text="Doctor Name" />
+              </columns>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </TableView>
+            <Button fx:id="ReturnCoverPage" layoutX="25.8" layoutY="626.0" mnemonicParsing="false" onAction="#ReturnCoverPage" prefHeight="54.0" prefWidth="178.0" style="-fx-background-color: #62AEC0; -fx-border-radius: 50; -fx-background-radius: 50;" text="Go To Base Page" textFill="WHITE" AnchorPane.leftAnchor="25.8">
+               <graphic>
+                  <ImageView fitHeight="42.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../MaryamProjectPhotos/5488456.png" />
+                     </image>
+                     <effect>
+                        <Lighting bumpInput="$null" specularConstant="2.0" specularExponent="0.0">
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Goudy Old Style Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="Search_Button_Appo" layoutX="633.0" layoutY="477.0" mnemonicParsing="false" onAction="#Search_Button_Appo" prefHeight="38.0" prefWidth="247.0" style="-fx-background-radius: 50; -fx-background-color: white;" text="Search By Appo ID OR Date " textFill="#0015ff">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../MaryamProjectPhotos/3410475.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Goudy Old Style Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="Delete_Button_Appo" layoutX="651.0" layoutY="623.0" mnemonicParsing="false" onAction="#Delete_Button_Appo" prefHeight="38.0" prefWidth="204.0" style="-fx-background-radius: 50; -fx-background-color: white;" text="Delete By PID &amp; AppDate" textFill="#0015ff">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../MaryamProjectPhotos/7247454.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Goudy Old Style Bold" size="14.0" />
+               </font>
+            </Button>
+            <TextField fx:id="Patient_idA" layoutX="311.4" layoutY="532.0000000000001" prefHeight="26.0" prefWidth="104.0" promptText="Patient ID" AnchorPane.rightAnchor="350.0" />
+            <TextField fx:id="Patient_nameA" layoutX="311.4" layoutY="559.2" prefHeight="26.0" prefWidth="104.0" promptText="Patient Name" AnchorPane.rightAnchor="350.0" />
+            <TextField fx:id="Dentist_idA" layoutX="311.4" layoutY="472.80000000000007" prefHeight="26.0" prefWidth="104.0" promptText="Dentist ID" AnchorPane.rightAnchor="350.0" />
+            <TextField fx:id="Dentist_NameA" layoutX="311.4" layoutY="500.80000000000007" prefHeight="26.0" prefWidth="104.0" promptText="Dentist Name" AnchorPane.rightAnchor="350.0" />
+            <Button fx:id="Add_Button_Appo" defaultButton="true" layoutX="14.0" layoutY="483.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Add_Button_Appo" prefHeight="42.0" prefWidth="104.0" style="-fx-background-radius: 50; -fx-background-color: white;" text="   ADD" textAlignment="RIGHT" textFill="#0009ff" wrapText="true">
+               <graphic>
+                  <ImageView fitHeight="39.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../MaryamProjectPhotos/950764.png" />
+                     </image>
+                     <effect>
+                        <ColorAdjust brightness="-0.09" />
+                     </effect>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Goudy Old Style Bold" size="16.0" />
+               </font>
+            </Button>
+            <Label layoutX="220.2" layoutY="477.6000000000001" text="Dentist ID" AnchorPane.bottomAnchor="199.2" AnchorPane.leftAnchor="300.0">
+               <font>
+                  <Font name="Goudy Old Style Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="220.2" layoutY="504.80000000000007" text="Dentist Name" AnchorPane.bottomAnchor="172.0" AnchorPane.leftAnchor="300.0">
+               <font>
+                  <Font name="Goudy Old Style Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="300.0" layoutY="536.0" text="Patient ID" AnchorPane.bottomAnchor="140.80000000000007" AnchorPane.leftAnchor="300.0">
+               <font>
+                  <Font name="Goudy Old Style Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="300.0" layoutY="566.0" text="Patient Name" AnchorPane.bottomAnchor="110.80000000000007" AnchorPane.leftAnchor="300.0">
+               <font>
+                  <Font name="Goudy Old Style Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="300.0" layoutY="596.0" text="Appointment ID" AnchorPane.leftAnchor="300.0">
+               <font>
+                  <Font name="Goudy Old Style Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="204.2" layoutY="624.0" prefHeight="18.0" prefWidth="126.0" text="Appointment Date" AnchorPane.leftAnchor="300.0">
+               <font>
+                  <Font name="Goudy Old Style Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="213.8" layoutY="659.0" prefHeight="18.0" prefWidth="142.0" text="Appointment Time" AnchorPane.leftAnchor="300.0">
+               <font>
+                  <Font name="Goudy Old Style Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Appointment_idA" layoutX="437.0" layoutY="592.0" prefHeight="26.0" prefWidth="126.0" promptText="Appointment ID" AnchorPane.rightAnchor="327.80000000000007" />
+            <DatePicker fx:id="Appointment_DateA" layoutX="436.0" layoutY="620.0" prefHeight="18.0" prefWidth="126.0" AnchorPane.rightAnchor="328.80000000000007" />
+            <TextField fx:id="Appointment_TimeA" layoutX="443.0" layoutY="655.0" prefHeight="26.0" prefWidth="112.0" promptText="hh : mm : ss" AnchorPane.rightAnchor="336.20000000000005" />
+            <Button fx:id="Update_Button_Appo" defaultButton="true" layoutX="14.0" layoutY="586.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Update_Button_Appo" prefHeight="38.0" prefWidth="256.0" style="-fx-background-radius: 50; -fx-background-color: white;" text="Update By PatId &amp;AppId" textAlignment="RIGHT" textFill="#0011ff">
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../MaryamProjectPhotos/950774.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Goudy Old Style Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="Refresh_Button" layoutX="156.0" layoutY="483.0" mnemonicParsing="false" onAction="#Refresh_Button" prefHeight="38.0" prefWidth="104.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="Refresh" textFill="#0014ff">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../MaryamProjectPhotos/13015679.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Goudy Old Style Bold" size="15.0" />
+               </font>
+            </Button>
+            <Text layoutX="32.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ramallah Smile Advanced Oral Care Clinic">
+               <font>
+                  <Font name="Goudy Old Style Bold" size="14.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="69.0" fitWidth="73.0" layoutX="649.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../MaryamProjectPhotos/10429225.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="Search_Button_Appo1" layoutX="633.0" layoutY="526.0" mnemonicParsing="false" onAction="#Search_Button_Appo1" prefHeight="38.0" prefWidth="112.0" style="-fx-background-radius: 50; -fx-background-color: white;" text="App Dr. List" textFill="#0015ff">
+               <font>
+                  <Font name="Goudy Old Style Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="Search_Button_Appo3" layoutX="634.0" layoutY="573.0" mnemonicParsing="false" onAction="#Search_Button_Appo3" prefHeight="38.0" prefWidth="238.0" style="-fx-background-radius: 50; -fx-background-color: white;" text="App Dr. With Date List" textFill="#0015ff">
+               <font>
+                  <Font name="Goudy Old Style Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="Search_Button_Appo2" layoutX="748.0" layoutY="524.0" mnemonicParsing="false" onAction="#Search_Button_Appo2" prefHeight="38.0" prefWidth="126.0" style="-fx-background-radius: 50; -fx-background-color: white;" text="App Patient. List" textFill="#0015ff">
+               <font>
+                  <Font name="Goudy Old Style Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="DateSort" defaultButton="true" layoutX="14.0" layoutY="533.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#DateSort" prefHeight="42.0" prefWidth="126.0" style="-fx-background-radius: 50; -fx-background-color: white;" text="Date Sort DES" textAlignment="RIGHT" textFill="#0009ff" wrapText="true">
+               <font>
+                  <Font name="Goudy Old Style Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="TimeSort" defaultButton="true" layoutX="141.0" layoutY="533.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#TimeSort" prefHeight="42.0" prefWidth="126.0" style="-fx-background-radius: 50; -fx-background-color: white;" text="Time Sort DES" textAlignment="RIGHT" textFill="#0009ff" wrapText="true">
+               <font>
+                  <Font name="Goudy Old Style Bold" size="16.0" />
+               </font>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </AnchorPane>
+   </children>
+</AnchorPane>

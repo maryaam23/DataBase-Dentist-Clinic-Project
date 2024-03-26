@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="716.0" prefWidth="912.0" style="-fx-background-color: #62AEC0; -fx-border-radius: 50;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.database_grouppro.FinalPageController">
+   <children>
+      <AnchorPane focusTraversable="true" layoutX="356.0" layoutY="150.0" prefHeight="503.0" prefWidth="435.0" style="-fx-background-color: #eeeeee; -fx-background-radius: 50;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../MaryamProjectPhotos/Screenshot%202024-01-02%20233951-fococlipping-standard.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="ReturnCoverPage" layoutX="204.0" layoutY="626.0" mnemonicParsing="false" onAction="#ReturnCoverPage" prefHeight="54.0" prefWidth="181.0" style="-fx-background-color: #62AEC0; -fx-border-radius: 50; -fx-background-radius: 50;" text="Go To Base Page" textFill="WHITE" AnchorPane.leftAnchor="25.0">
+               <graphic>
+                  <ImageView fitHeight="42.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../MaryamProjectPhotos/5488456.png" />
+                     </image>
+                     <effect>
+                        <Lighting bumpInput="$null" specularConstant="2.0" specularExponent="0.0">
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Goudy Old Style Bold" size="16.0" />
+               </font>
+            </Button>
+            <Text layoutX="60.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DATA BASE SYSTEMS -- COMP333">
+               <font>
+                  <Font name="Goudy Old Style Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="318.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Group Team">
+               <font>
+                  <Font name="Goudy Old Style Bold" size="51.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="96.0" fitWidth="133.0" layoutX="626.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../MaryamProjectPhotos/5964505.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="548.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" wrappingWidth="77.33673095703125">
+               <font>
+                  <Font name="Goudy Old Style Bold" size="23.0" />
+               </font>
+            </Text>
+            <Text layoutX="138.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="77.33673095703125" AnchorPane.leftAnchor="138.0">
+               <font>
+                  <Font name="Goudy Old Style Bold" size="23.0" />
+               </font>
+            </Text>
+            <Text layoutX="322.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="University Id" wrappingWidth="134.93670654296875">
+               <font>
+                  <Font name="Goudy Old Style Bold" size="23.0" />
+               </font>
+            </Text>
+            <TextField layoutX="102.0" layoutY="230.0" prefHeight="28.0" prefWidth="142.0" style="-fx-background-radius: 50; -fx-alignment: center;" text="Mariam Hamad" AnchorPane.leftAnchor="102.0">
+               <font>
+                  <Font name="Goudy Old Style Bold" size="15.0" />
+               </font>
+            </TextField>
+            <TextField layoutX="307.0" layoutY="230.0" prefHeight="28.0" prefWidth="170.0" style="-fx-background-radius: 50; -fx-alignment: center;" text="1200837" AnchorPane.leftAnchor="307.0">
+               <font>
+                  <Font name="Goudy Old Style Bold" size="15.0" />
+               </font>
+            </TextField>
+            <TextField layoutX="496.0" layoutY="230.0" prefHeight="28.0" prefWidth="210.0" style="-fx-background-radius: 50; -fx-alignment: center;" text="1200837@student.birzeit.edu" AnchorPane.leftAnchor="496.0">
+               <font>
+                  <Font name="Goudy Old Style Bold" size="15.0" />
+               </font>
+            </TextField>
+            <TextField layoutX="102.0" layoutY="330.0" prefHeight="28.0" prefWidth="142.0" style="-fx-background-radius: 50; -fx-alignment: center;" text="Dalia Hamed" AnchorPane.leftAnchor="102.0">
+               <font>
+                  <Font name="Goudy Old Style Bold" size="15.0" />
+               </font>
+            </TextField>
+            <TextField layoutX="307.0" layoutY="330.0" prefHeight="28.0" prefWidth="170.0" style="-fx-background-radius: 50; -fx-alignment: center;" text="1211601" AnchorPane.leftAnchor="307.0">
+               <font>
+                  <Font name="Goudy Old Style Bold" size="15.0" />
+               </font>
+            </TextField>
+            <TextField layoutX="496.0" layoutY="330.0" prefHeight="28.0" prefWidth="210.0" style="-fx-background-radius: 50; -fx-alignment: center;" text="1211601@student.birzeit.edu" AnchorPane.leftAnchor="496.0">
+               <font>
+                  <Font name="Goudy Old Style Bold" size="15.0" />
+               </font>
+            </TextField>
+            <TextField layoutX="98.0" layoutY="280.0" prefHeight="28.0" prefWidth="142.0" style="-fx-background-radius: 50; -fx-alignment: center;" text="Leena Affouri" AnchorPane.leftAnchor="102.0">
+               <font>
+                  <Font name="Goudy Old Style Bold" size="15.0" />
+               </font>
+            </TextField>
+            <TextField layoutX="307.0" layoutY="280.0" prefHeight="28.0" prefWidth="170.0" style="-fx-background-radius: 50; -fx-alignment: center;" text="1200335" AnchorPane.leftAnchor="307.0">
+               <font>
+                  <Font name="Goudy Old Style Bold" size="15.0" />
+               </font>
+            </TextField>
+            <TextField layoutX="512.0" layoutY="280.0" prefHeight="28.0" prefWidth="210.0" style="-fx-background-radius: 50; -fx-alignment: center;" text="1200335@student.birzeit.edu" AnchorPane.leftAnchor="496.0">
+               <font>
+                  <Font name="Goudy Old Style Bold" size="15.0" />
+               </font>
+            </TextField>
+            <ImageView fitHeight="125.0" fitWidth="150.0" layoutX="41.0" layoutY="481.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../MaryamProjectPhotos/fvrP7rn.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="251.0" fitWidth="319.0" layoutX="578.0" layoutY="402.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../MaryamProjectPhotos/m.jpg" />
+               </image>
+            </ImageView>
+            <Text layoutX="128.0" layoutY="412.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Doctor. " wrappingWidth="77.33673095703125">
+               <font>
+                  <Font name="Goudy Old Style Bold" size="23.0" />
+               </font>
+            </Text>
+            <Text layoutX="128.0" layoutY="450.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Section: " wrappingWidth="77.33673095703125">
+               <font>
+                  <Font name="Goudy Old Style Bold" size="23.0" />
+               </font>
+            </Text>
+            <TextField layoutX="234.0" layoutY="391.0" prefHeight="28.0" prefWidth="142.0" style="-fx-background-radius: 50; -fx-alignment: center;" text="Ahmed Abusnaina">
+               <font>
+                  <Font name="Goudy Old Style Bold" size="15.0" />
+               </font>
+            </TextField>
+            <TextField layoutX="234.0" layoutY="429.0" prefHeight="28.0" prefWidth="142.0" style="-fx-background-radius: 50; -fx-alignment: center;" text="4">
+               <font>
+                  <Font name="Goudy Old Style Bold" size="15.0" />
+               </font>
+            </TextField>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </AnchorPane>
+   </children>
+</AnchorPane>

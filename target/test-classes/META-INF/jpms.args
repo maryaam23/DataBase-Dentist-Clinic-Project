@@ -1,0 +1,4 @@
+--patch-module
+com.mycompany.database_grouppro=_
+--add-reads
+com.mycompany.database_grouppro=ALL-UNNAMED
